@@ -1,4 +1,4 @@
-module github.com/Rickykn/drug-proto.git
+module github.com/Rickykn/drug-proto
 
 go 1.23.0
 
