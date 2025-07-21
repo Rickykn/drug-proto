@@ -2,8 +2,6 @@ module github.com/Rickykn/drug-proto
 
 go 1.23.0
 
-toolchain go1.23.11
-
 require (
 	github.com/grpc-ecosystem/grpc-gateway/v2 v2.27.1
 	google.golang.org/genproto/googleapis/api v0.0.0-20250603155806-513f23925822
