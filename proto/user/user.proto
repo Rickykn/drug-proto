@@ -9,16 +9,17 @@ import "google/api/annotations.proto";
 service UserService {
   rpc GetUser (GetUserRequest) returns (GetUserResponse) {
     option (google.api.http) = {
-      get: "/v1/users/{id}"
+      get: "/v1/users"
     };
   }
 }
 
 message GetUserRequest {
-  string id = 1;
+  string username = 1 [json_name = "username"];
 }
 
 message GetUserResponse {
   string id = 1;
-  string name = 2;
+  string username = 2;
+  string email = 3;
 }
